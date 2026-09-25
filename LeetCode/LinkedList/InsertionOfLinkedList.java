@@ -20,3 +20,16 @@ public class  {
         return a;
     }
 }
+///
+/// ///
+/// /// ///
+ListNode temp1 = headnode1;
+ListNode temp2 = headnode2;
+while(temp1 != temp2) {
+    temp1 = temp1.next;
+    temp2 = temp2.next;
+    if(temp1 == temp2) return temp1;
+    if(temp1 == null) temp1 = headnode2;
+    if(temp2 == null) temp2 = headnode1;
+    return temp1;
+} 
