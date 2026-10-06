@@ -1,5 +1,5 @@
     public int minGroups(int[][] intervals) {
-        int arrivals[]= new int[intervals.length];
+        int arrivals[]= new int[intervals.length];   //T.C = O(nlogn + n) and S.C = O(1)
         int departure[]= new int[intervals.length];
         for( int i =0; i < intervals.length; i++){
              arrivals[i] = intervals[i][0];
